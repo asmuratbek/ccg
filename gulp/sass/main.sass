@@ -1,0 +1,107 @@
+body
+  font-family: 'Roboto', sans-serif
+
+.navbar-right .dropdown-menu
+  left: 70px
+  right: inherit
+nav
+  padding: 14px 0
+  height: 80px
+  border-radius: 0
+  border: 0
+  background-color: #fff
+  ul.navbar-right > li > a
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 3.5px
+    position: relative
+    float: left
+    margin-left: 60px
+    color: #222
+    background-color: transparent !important
+    transition: 0.2s all
+  ul.navbar-right > li:hover > a
+    color: #009fff
+.banner
+  background: #fdc
+  position: relative
+  padding: 250px 0
+  text-align: center
+  h1
+    padding-bottom: 30px
+    letter-spacing: 15px
+    font-size: 66px
+    text-transform: uppercase
+    font-weight: 400
+  h2
+    color: #252525
+    font-size: 18px
+    font-weight: 400
+    letter-spacing: 5px
+    line-height: 2.5
+    text-transform: uppercase
+.project-item
+  .col-md-6
+    height: 600px
+    -webkit-background-size: cover
+    background-size: cover
+    position: relative
+    a
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      z-index: 10
+    .title
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 2
+      text-align: center
+      width: 100%
+      opacity:  0
+      transition: 0.5s all
+      background-color: #fff
+      height: 600px
+      h3
+        position: absolute
+        transform: translate(-50%, -50%)
+        top: 40%
+        left: 50%
+        transition: 0.5s all
+        opacity: 0
+        text-transform: uppercase
+        font-weight: 700
+      p
+        position: absolute
+        transform: translate(-50%, -50%)
+        top: 50%
+        left: 50%
+        transition: 0.5s all
+        opacity: 0
+        text-transform: uppercase
+        color: #009fff
+        font-weight: 500
+  .col-md-6:hover
+    background-color: #fff !important
+    .title, h3, p
+      opacity: 1
+footer
+  height: 85px
+  line-height: 85px
+  p
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 1.5px
+    margin-bottom: 0
+  .social-links
+    li
+      display: inline-block
+      margin-left: 30px
+      a
+        color: #000
+        display: inline-block
+      a:hover
+        color: #009fff
