@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% load staticfiles %}
 
-</body>
-</html>
+{% block banner %}
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <h1>bloom agency</h1>
+                <h2>WE CREATE REMARKABLE BRANDS</h2>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block content %}
+
+
+    {% include 'portfolio_include.html' %}
+{% endblock %}

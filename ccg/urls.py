@@ -23,9 +23,11 @@ from django.conf.urls.static import static
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',  index, name='index'),
-    url(r'^$',  contacts, name='contacts'),
-    url(r'^$',  portfolio_inner, name='portfolio_inner'),
-    url(r'^$',  about, name='about'),
+    url(r'^about/$', about, name='about'),
+    url(r'^portfolio/$',  portfolio, name='portfolio'),
+    url(r'^contacts/$',  contacts, name='contacts'),
+    url(r'^portfolio/(?P<id>[0-9]+)/$',  portfolio_inner, name='portfolio_inner'),
+
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 ]
 

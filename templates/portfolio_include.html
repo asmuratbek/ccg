@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<section class="project-item">
+    {% for p in portfolio %}
+    <div class="col-md-6 col-sm-6" style="background: {% if p.image_bg %}{{ p.image_bg }}{% endif %} url({{ p.main_image.url }}) center no-repeat;">
+        <a href="{% url 'portfolio_inner' id=p.id %}"></a>
+        <div class="title">
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.category.first }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</section>

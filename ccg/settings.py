@@ -133,7 +133,7 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(os.path.dirname(_PATH), 'static', 'static_root')
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.dirname(BASE_DIR), 'ccgstudio', 'templates', 'public'),
+    os.path.join(os.path.dirname(BASE_DIR), 'ccg', 'templates', 'public'),
 )
 
 
